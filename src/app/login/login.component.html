@@ -1,3 +1,13 @@
-<p>
-  login works!
-</p>
+<mat-card>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">  
+    <label>
+      User Name:
+      <input type="text" formControlName="userName">
+    </label>
+    <label>
+      Password:
+      <input type="password" formControlName="password">
+    </label>
+    <button mat-button type="submit">Login</button>
+  </form>
+</mat-card>
